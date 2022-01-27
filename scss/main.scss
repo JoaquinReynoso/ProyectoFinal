@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+
+
+
+    @import "./variables/mixin";
+    @import "./variables/extend";
+
+    @import "./secciones/body";
+    @import "./secciones/header";
+    @import "./secciones/main";
+    @import "./secciones/footer";
+    @import "./secciones/medias";

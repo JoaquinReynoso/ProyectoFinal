@@ -1,0 +1,43 @@
+@media (min-width: 460px) {
+    .header {
+        display: flex;
+
+
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    body {
+        background-position: 100%;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .header {
+        display: flex;
+        margin:auto;
+
+    }
+
+    .nav {
+        width: auto;
+        margin: auto;
+    }
+
+    body {
+        background-position: 100%;
+    }
+
+    h1 {
+        margin: 10px 20px;
+    }
+
+    .celular {
+        display: flex;
+        padding: 20vh;
+    }
+
+}

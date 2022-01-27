@@ -1,0 +1,22 @@
+body {
+    background-image: url('../img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.grilla {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer";
+
+    justify-items: stretch;
+    align-items: stretch;
+}

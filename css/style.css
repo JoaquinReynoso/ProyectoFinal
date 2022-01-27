@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+main p {
+  padding: 10vh;
+  margin: auto;
+  background-color: #e4cda7;
+  font-size: 20px;
+  border-radius: 100px; }
+
+body {
+  background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.grilla {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header" "main" "main" "main" "footer";
+  justify-items: stretch;
+  align-items: stretch; }
+
+header {
+  background-image: linear-gradient(45deg, #8e806a, #e4cda7);
+  background-size: 100vw;
+  height: 100%;
+  width: 100%;
+  display: inline-block; }
+  header .header {
+    grid-area: header; }
+
+.nav {
+  margin: auto;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.nav_link--activo {
+  font-weight: bold; }
+
+ul,
+ol {
+  list-style: none; }
+
+.nav li a {
+  display: block;
+  background-color: black;
+  color: blanchedalmond;
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px; }
+
+.nav li a:hover {
+  background-color: #645e5e; }
+
+.nav > li {
+  display: inline-block;
+  padding: 10px; }
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: none; }
+
+.nav li:hover > ul {
+  display: inline-block; }
+
+main h1 {
+  color: #d38c12;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #ffe6bc; }
+
+main h2 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #ffe6bc; }
+
+main .main {
+  grid-area: main; }
+
+main .carousel {
+  width: 40%;
+  margin: 00 auto; }
+
+main .carousel-item img {
+  height: 30rem;
+  object-fit: cover;
+  object-position: center; }
+
+main .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+main .celular {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  border-radius: 200px;
+  width: 600px; }
+
+main label {
+  background-color: #e4cda7; }
+
+main .list-group-item.active {
+  background-color: #8e806a; }
+
+main .list-group-item {
+  background-color: #e4cda7; }
+
+main .compuProducto {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  border-radius: 100px;
+  width: 300px; }
+
+footer .footer {
+  grid-area: footer; }
+
+footer .link {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none; }
+
+footer .link:hover {
+  background-color: #d1c0c0; }
+
+footer .facebook {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50px; }
+
+footer .youtube {
+  display: inline-flex;
+  width: 50px; }
+
+footer .google {
+  display: inline-flex;
+  width: 50px; }
+
+@media (min-width: 460px) {
+  .header {
+    display: flex; }
+  .nav {
+    width: auto; }
+  body {
+    background-position: 100%; } }
+
+@media (min-width: 600px) {
+  .header {
+    display: flex;
+    margin: auto; }
+  .nav {
+    width: auto;
+    margin: auto; }
+  body {
+    background-position: 100%; }
+  h1 {
+    margin: 10px 20px; }
+  .celular {
+    display: flex;
+    padding: 20vh; } }
