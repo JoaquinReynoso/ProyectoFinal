@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="formulario, contacto, informacion, comunicacion">
-    <meta name="description" content="Como contactarte con la compañia para acceder a beneficios">
+    <meta name="keywords" content="integrantes, producto, creadores, contenido">
+    <meta name="description" content="Informacion acerca sobre la compañia">
     <link rel="shortcut icon" href="../img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Scope+One&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css">
-    <title>CONTACTO-JR</title>
+    <title>GALERIA-JR</title>
 </head>
 
 <body>
@@ -31,34 +32,42 @@
 
                 <li><a class="nav_link" href="./contacto.html">CONTACTO</a>
 
-
-            </ul>
+            </ul>>
         </header>
 
-        <main class="container-fluid">
-
-            <div class="row">
-
-                <div class="form-group col-lg-4">
-                    <label for="email">Nombre Completo:</label>
-                    <input type="email" class="form-control" id="email">
+        <main class="container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/4.jpeg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-
-                <div class="form-group col-lg-4">
-                    <label for="pwd">Email de contacto:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-
-                <div class="form-group col-lg-4">
-                    <label for="pwd">Consulta:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
 
             </div>
 
         </main>
 
         <footer>
+
             <div class="footer">
                 <a href="mailto: reynoso_joaquin@yahoo.com.ar" target="_blank">
                     <i class="mdi mdi-gmail"></i>
@@ -71,7 +80,6 @@
                 </a>
                 <p class="m-0">Joaquin Reynoso Bartender 2022</p>
             </div>
-
 
 
         </footer>

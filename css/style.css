@@ -1,16 +1,18 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
-main p {
+.coctel {
   padding: 10vh;
   margin: auto;
-  background-color: #e4cda7;
-  font-size: 20px;
-  border-radius: 100px; }
+  color: white;
+  background-image: linear-gradient(45deg, #151515, #3c415c);
+  font-size: 30px;
+  border-radius: 50px; }
 
 body {
-  background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
+  background-image: url("/img/fondo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -25,7 +27,7 @@ body {
   align-items: stretch; }
 
 header {
-  background-image: linear-gradient(45deg, #8e806a, #e4cda7);
+  background-image: linear-gradient(45deg, #151515, #301b3f);
   background-size: 100vw;
   height: 100%;
   width: 100%;
@@ -52,7 +54,7 @@ ol {
   text-decoration: none;
   width: fit-content;
   padding: 10px;
-  border-radius: 10px; }
+  border-radius: 30px; }
 
 .nav li a:hover {
   background-color: #645e5e; }
@@ -69,92 +71,90 @@ ol {
 .nav li:hover > ul {
   display: inline-block; }
 
-main h1 {
-  color: #d38c12;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #ffe6bc; }
-
-main h2 {
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #ffe6bc; }
-
-main .main {
-  grid-area: main; }
-
-main .carousel {
-  width: 40%;
-  margin: 00 auto; }
-
-main .carousel-item img {
-  height: 30rem;
-  object-fit: cover;
-  object-position: center; }
-
-main .texto {
+main {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
+  main .bio-titulo {
+    display: flex;
+    width: 30rem;
+    text-align: center; }
+  main .bio-texto {
+    display: flex;
+    width: 30rem; }
+  main .img-bio {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 20px; }
+  main h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(45deg, #151515, #3c415c);
+    border-radius: 10px; }
+  main h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(45deg, #151515, #3c415c);
+    border-radius: 10px; }
+  main .main {
+    grid-area: main; }
+  main .carousel {
+    width: 40%;
+    margin: 00 auto; }
+  main .carousel-item img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center; }
+  main .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  main label {
+    background-color: #e4cda7; }
+  main .list-group-item.active {
+    background-color: #8e806a; }
+  main .list-group-item {
+    background-color: #e4cda7; }
 
-main .celular {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+.bio {
+  padding: 10vh;
   margin: auto;
-  border-radius: 200px;
-  width: 600px; }
+  color: white;
+  background-image: linear-gradient(45deg, #151515, #3c415c);
+  font-size: 30px;
+  border-radius: 50px; }
 
-main label {
-  background-color: #e4cda7; }
-
-main .list-group-item.active {
-  background-color: #8e806a; }
-
-main .list-group-item {
-  background-color: #e4cda7; }
-
-main .compuProducto {
+footer {
+  grid-area: footer;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin: auto;
-  border-radius: 100px;
-  width: 300px; }
-
-footer .footer {
-  grid-area: footer; }
-
-footer .link {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  color: black;
-  text-decoration: none; }
-
-footer .link:hover {
-  background-color: #d1c0c0; }
-
-footer .facebook {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 50px; }
-
-footer .youtube {
-  display: inline-flex;
-  width: 50px; }
-
-footer .google {
-  display: inline-flex;
-  width: 50px; }
+  background-color: black; }
+  footer .m-0 {
+    color: white; }
+  footer div.footer {
+    position: relative; }
+  footer a :hover {
+    text-decoration: none; }
+  footer i.mdi {
+    font-size: 20px;
+    margin: 0px 10px 2px 10px;
+    color: white; }
 
 @media (min-width: 460px) {
   .header {

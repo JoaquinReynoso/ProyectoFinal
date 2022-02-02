@@ -1,64 +1,84 @@
-main{
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bio-titulo {
+        display: flex;
+        width: 30rem;
+        text-align: center;
+    }
+
+    .bio-texto {
+        display: flex;
+        width: 30rem;
+    }
+
+    .img-bio {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        border-radius: 20px;
+    }
+
     h1 {
-        @include fontStyle (rgb(211, 140, 18), 40px, bold)
+        @include fontStyle ($colorTexto, 40px, bold)
     }
-    
+
     h2 {
-        @include fontStyle (black, 20px, bold)
-    
+        @include fontStyle ($colorTexto, 20px, bold)
     }
+
 
     .main {
         grid-area: main;
     }
-    .carousel{
+
+    .carousel {
         width: 40%;
         margin: 00 auto;
     }
+
     .carousel-item img {
         height: 30rem;
         object-fit: cover;
         object-position: center;
     }
+
     .texto {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    
+
     }
-    
-    .celular {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        margin: auto;
-        border-radius: 200px;
-        width: 600px;
-    }
-    
-    p {
-        @extend %estilosParrafo;
-    }
-    
-    label{
+
+
+    label {
         background-color: rgb(228, 205, 167);
     }
-    
-    .list-group-item.active{
-        background-color:rgb(142, 128, 106);
+
+    .list-group-item.active {
+        background-color: rgb(142, 128, 106);
     }
-    
-    .list-group-item{
-        background-color:rgb(228, 205, 167);
+
+    .list-group-item {
+        background-color: rgb(228, 205, 167);
+    }
 }
-.compuProducto {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+
+.bio {
+    padding: 10vh;
     margin: auto;
-    border-radius: 100px;
-    width: 300px;
+    color: white;
+    background-image: linear-gradient(45deg,rgb(21, 21, 21),rgb(60, 65, 92));
+    font-size: 30px;
+    border-radius: 50px;
 }
+
+.coctel {
+    @extend %estilosParrafo;
 }

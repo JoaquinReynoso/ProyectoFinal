@@ -1,8 +1,9 @@
-@mixin fontStyle ($color, $tamanio, $peso) {
+@mixin fontStyle ($color, $tamanio, $peso){
     color: $color; 
     font-size: $tamanio;
     font-weight: $peso;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(255, 230, 188);
+    background-image: linear-gradient(45deg,rgb(21, 21, 21),rgb(60, 65, 92));
+    border-radius: 10px;
 } 
