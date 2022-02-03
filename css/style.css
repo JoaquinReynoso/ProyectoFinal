@@ -12,7 +12,7 @@
   border-radius: 50px; }
 
 body {
-  background-image: url("/img/fondo.jpeg");
+  background-image: url("../img/fondo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
