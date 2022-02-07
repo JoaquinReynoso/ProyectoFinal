@@ -1,16 +1,18 @@
 @media (min-width: 460px) {
     .header {
-        display: flex;
+        display: inline-block;
 
 
     }
 
     .nav {
         width: auto;
+        flex-wrap: nowrap;
     }
 
     body {
         background-position: 100%;
+        overflow-x: hidden;
     }
 
 }
@@ -18,26 +20,23 @@
 @media (min-width: 600px) {
     .header {
         display: flex;
-        margin:auto;
+        margin: auto;
 
     }
 
     .nav {
         width: auto;
         margin: auto;
+        flex-wrap: nowrap;
     }
 
     body {
         background-position: 100%;
+        overflow-x: hidden;
     }
 
     h1 {
         margin: 10px 20px;
-    }
-
-    .celular {
-        display: flex;
-        padding: 20vh;
     }
 
 }

@@ -7,12 +7,37 @@
   padding: 10vh;
   margin: auto;
   color: white;
-  background-image: linear-gradient(45deg, #151515, #3c415c);
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  outline: none;
+  border: solid 1px #b3aca7;
   font-size: 30px;
-  border-radius: 50px; }
+  font-family: 'Lato', sans-serif; }
 
-body {
-  background-image: url("../img/fondo.jpeg");
+.body1 {
+  background-image: url("../img/fondo1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.body2 {
+  background-image: url("../img/fondo2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.body3 {
+  background-image: url("../img/fondo3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.body4 {
+  background-image: url("../img/fondo4.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -36,9 +61,10 @@ header {
     grid-area: header; }
 
 .nav {
+  flex-wrap: nowrap;
   margin: auto;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 .nav_link--activo {
   font-weight: bold; }
@@ -54,7 +80,7 @@ ol {
   text-decoration: none;
   width: fit-content;
   padding: 10px;
-  border-radius: 30px; }
+  border-radius: 10px; }
 
 .nav li a:hover {
   background-color: #645e5e; }
@@ -83,28 +109,36 @@ main {
     text-align: center; }
   main .bio-texto {
     display: flex;
-    width: 30rem; }
+    font-family: 'Lato', sans-serif;
+    width: 50rem;
+    font-size: 0.675em; }
   main .img-bio {
     display: flex;
+    padding: 0px 15px 0px 15px;
     justify-content: center;
     width: 30%;
-    border-radius: 20px; }
+    border-radius: 1px;
+    outline: none;
+    border: solid 4px #b3aca7; }
   main h1 {
     color: white;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: linear-gradient(45deg, #151515, #3c415c);
-    border-radius: 10px; }
+    font-family: 'Lato', sans-serif;
+    margin-top: 2rem;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=50); }
   main h2 {
     color: white;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: linear-gradient(45deg, #151515, #3c415c);
-    border-radius: 10px; }
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=50); }
   main .main {
     grid-area: main; }
   main .carousel {
@@ -128,67 +162,88 @@ main {
     background-color: #e4cda7; }
 
 .bio {
-  padding: 10vh;
+  padding: 40px 15px 0px 15px;
   margin: auto;
   color: white;
-  background-image: linear-gradient(45deg, #151515, #3c415c);
+  font-family: 'Lato', sans-serif;
   font-size: 30px;
-  border-radius: 50px; }
+  background: transparent;
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=100);
+  outline: none;
+  border: solid 1px #b3aca7; }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em; }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   color: #bbb5af; }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   color: #aca49c;
   font-size: 0.875em; }
 
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
   color: #bbb5af; }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #aca49c;
   font-size: 0.875em; }
 
-input:focus::placeholder, textarea::focus:placeholder {
+input:focus::placeholder,
+textarea::focus:placeholder {
   color: #bbb5af; }
 
-input::-ms-placeholder, textarea::-ms-placeholder {
+input::-ms-placeholder,
+textarea::-ms-placeholder {
   color: #aca49c;
   font-size: 0.875em; }
 
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
   color: #bbb5af; }
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
   color: #e2dedb;
   font-size: 0.875em; }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
   color: #cbc6c1; }
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
   color: #e2dedb;
   font-size: 0.875em; }
 
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
   color: #cbc6c1; }
 
-input:hover::placeholder, textarea:hover::placeholder {
+input:hover::placeholder,
+textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em; }
 
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
   color: #cbc6c1; }
 
-input:hover::placeholder, textarea:hover::placeholder {
+input:hover::placeholder,
+textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em; }
 
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1; }
 
 #form {
@@ -275,11 +330,13 @@ footer {
 
 @media (min-width: 460px) {
   .header {
-    display: flex; }
+    display: inline-block; }
   .nav {
-    width: auto; }
+    width: auto;
+    flex-wrap: nowrap; }
   body {
-    background-position: 100%; } }
+    background-position: 100%;
+    overflow-x: hidden; } }
 
 @media (min-width: 600px) {
   .header {
@@ -287,11 +344,10 @@ footer {
     margin: auto; }
   .nav {
     width: auto;
-    margin: auto; }
+    margin: auto;
+    flex-wrap: nowrap; }
   body {
-    background-position: 100%; }
+    background-position: 100%;
+    overflow-x: hidden; }
   h1 {
-    margin: 10px 20px; }
-  .celular {
-    display: flex;
-    padding: 20vh; } }
+    margin: 10px 20px; } }

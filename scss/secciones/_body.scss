@@ -1,5 +1,30 @@
-body {
-    background-image: url('../img/fondo.jpeg');
+.body1 {
+    background-image: url('../img/fondo1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.body2 {
+    background-image: url('../img/fondo2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.body3 {
+    background-image: url('../img/fondo3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.body4 {
+    background-image: url('../img/fondo4.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;

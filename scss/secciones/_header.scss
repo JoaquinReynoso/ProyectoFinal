@@ -4,19 +4,24 @@ header {
     height: 100%;
     width: 100%;
     display: inline-block;
-    .header{
+
+    .header {
         grid-area: header;
     }
 }
-    .nav {
-        margin: auto;
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .nav_link--activo {
-        font-weight: bold;
-    }
-    ul,
+
+.nav {
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav_link--activo {
+    font-weight: bold;
+}
+
+ul,
 ol {
     list-style: none;
 }
@@ -28,7 +33,7 @@ ol {
     text-decoration: none;
     width: fit-content;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
 
 
 }
@@ -52,4 +57,3 @@ ol {
 .nav li:hover>ul {
     display: inline-block;
 }
-

@@ -1,9 +1,26 @@
-@mixin fontStyle ($color, $tamanio, $peso){
+@mixin fontStyle2 ($color, $tamanio, $peso){
     color: $color; 
     font-size: $tamanio;
     font-weight: $peso;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: linear-gradient(45deg,rgb(21, 21, 21),rgb(60, 65, 92));
-    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    opacity: 0.8;
+    filter:  alpha(opacity=50);
+    
+} 
+
+@mixin fontStyle1 ($color, $tamanio, $peso){
+    color: $color; 
+    font-size: $tamanio;
+    font-weight: $peso;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 2rem;
+    background-color: black;
+    opacity: 0.8;
+    filter:  alpha(opacity=50);
+
+    
+    
 } 
